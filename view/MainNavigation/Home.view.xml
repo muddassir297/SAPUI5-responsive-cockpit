@@ -1,0 +1,281 @@
+<mvc:View controllerName="UI5FioriForTools.controller.MainNavigation.Home" height="100%" 
+  xmlns:l="sap.ui.layout"
+  xmlns:forms="sap.ui.layout.form"
+  xmlns:card="sap.f.cards"
+  xmlns:mvc="sap.ui.core.mvc" 
+  xmlns="sap.m"
+  xmlns:grid="sap.ui.layout.cssgrid"
+  xmlns:core="sap.ui.core"
+  xmlns:f="sap.f"
+  async="true">
+  <Page showHeader="false">
+    <content>
+    <!-- =============================Main Header============================ -->
+    <l:VerticalLayout id="containerLayout-1" width="100%">
+      <l:BlockLayout id="BlockLayout-1" class="customCellImageBackground">
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+            <VBox>
+              <Text width="100%" textAlign="Center" class="section--title-primary" text="Welcome to SAP Cloud Platform Trial"/>
+            </VBox>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+            <Title width="100%" textAlign="Center" level="H3" text="Learn how to create and deploy cloud apps and gain access to a comprehensive set of platform services." />            
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+         <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+              <Button text="Enter Your Trial Account" type="Emphasized" press="" class="button-padding "/> 
+              <Button text="Launch SAP Web IDE" type="Emphasized" press="" class="button-padding"/>  
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+      </l:BlockLayout>
+    </l:VerticalLayout>       
+  <!-- =======================Starter Scenarios =================================-->
+    <l:VerticalLayout id="containerLayout-2" width="100%">
+      <l:BlockLayout id="BlockLayout-2" class="customCard-1-Background">
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+             <VBox>
+              <Text width="100%" textAlign="Center" class="section--title" text="Starter Scenarios"/>
+            </VBox>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+         <l:BlockLayoutRow class="col-xl-4 col-xl-3 col-xl-2 col-xl-1 col-lg-4 col-lg-3 col-lg-2 col-lg-1 col-md-2 col-md-1 col-sm-2 col-xs-3 col-xs-2 col-xs-1 col-xs-0">
+          <l:BlockLayoutCell>  
+            <f:GridContainer items ="{path: '/cardStart', templateShareable:false}">
+                <f:Card width="auto">
+                  <f:layoutData>
+                    <f:GridContainerItemLayoutData columns="3" />
+                  </f:layoutData>
+                  <f:header>
+                    <card:Header class="text-align-left"
+                      title="{headerTitle}"
+                      subtitle="{headerSubTitle}"
+                      iconSrc="sap-icon://bus-public-transport"/>
+                  </f:header>
+                  <f:content>
+                  <VBox
+                      height="115px"
+                      class="sapUiSmallMargin"
+                      justifyContent="SpaceBetween">
+                    <HBox
+                      alignItems="Center">                      
+                        <Text text="{text}"/>                      
+								    </HBox>
+                    <HBox justifyContent="SpaceBetween">
+                    <core:Icon
+                        src="sap-icon://performance"
+                        class="size1" >                        
+                    </core:Icon>
+                      <Text class="text-align-left" text="{level}"/>
+                    <core:Icon
+                        src="sap-icon://fob-watch"
+                        class="size1" >                        
+                    </core:Icon>
+                    <Text class="text-align-left" text="{duration}"/>
+                      <Button text="Open Scenario" type="Transparent" />
+                    </HBox>
+                    </VBox>
+                  </f:content>
+                </f:Card>
+              </f:GridContainer>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+         <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+            <Title width="100%" textAlign="Center" level="H3" text="For more SAP Cloud Platform tutorials, check out the Tutorial Navigator." />            
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+      </l:BlockLayout>
+    </l:VerticalLayout>
+
+    <!-- =======================Learn the Basics =================================-->
+    <l:VerticalLayout id="containerLayout-3" width="100%">
+      <l:BlockLayout id="BlockLayout-3" class="customCard-2-Background">
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+            <VBox>
+              <Text width="100%" textAlign="Center" class="section--title" text="Learn the Basics"/>
+            </VBox>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+       
+         <l:BlockLayoutRow>
+          <l:BlockLayoutCell class="col-xl-4 col-xl-3 col-xl-2 col-xl-1 col-lg-4 col-lg-3 col-lg-2 col-lg-1 col-md-2 col-md-1 col-sm-2 col-xs-3 col-xs-2 col-xs-1 col-xs-0">  
+            
+            <f:GridContainer items ="{path: '/cardBase', templateShareable:false}" >
+              
+                <f:Card width="auto">              
+                  <f:layoutData>
+                    <f:GridContainerItemLayoutData columns="3" />
+                  </f:layoutData>
+                  <f:header>
+                    <card:Header class="text-align-left"
+                      title="{headerTitle}"
+                      subtitle="{headerSubTitle}"
+                      iconSrc="sap-icon://bus-public-transport"/>
+                  </f:header>
+                  <f:content>
+                  <VBox
+                      height="115px"
+                      class="sapUiSmallMargin"
+                      justifyContent="SpaceBetween">
+                    <HBox
+                      alignItems="Center">
+                      
+                        <Text text="{text}"/>
+                      
+								    </HBox>
+                    <HBox justifyContent="SpaceBetween">
+                    <core:Icon
+                        src="sap-icon://performance"
+                        class="size1" >                        
+                    </core:Icon>
+                      <Text class="text-align-left" text="{level}"/>
+                    <core:Icon
+                        src="sap-icon://fob-watch"
+                        class="size1" >                        
+                    </core:Icon>
+                    <Text class="text-align-left" text="{duration}"/>
+                      <Button text="Open Scenario" type="Transparent" />
+                    </HBox>
+                    </VBox>
+                  </f:content>
+                </f:Card> 
+              </f:GridContainer>
+                        
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+         
+      </l:BlockLayout>
+    </l:VerticalLayout>
+
+    <!-- =======================Environments =================================-->
+    <l:VerticalLayout id="containerLayout-4" width="100%">
+      <l:BlockLayout id="BlockLayout-4" class="customCard-1-Background">
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+             <VBox>
+              <Text width="100%" textAlign="Center" class="section--title" text="Environments"/>
+            </VBox>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+            <Title width="100%" textAlign="Center" level="H3" text="SAP Cloud Platform provides two different development environments: Cloud Foundry and Neo." />            
+            <Title width="100%" textAlign="Center" level="H3" text="Cloud Foundry trial accounts run on third-party data centers from AWS, Azure, and Google Cloud Platform and they are limited to 90 days." />            
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+            <Button text="Access Cloud Foundry Trial" type="Transparent" press="" class="button-padding"/> 
+            <Button text="Access Neo Trial" type="Transparent" press="" class="button-padding"/>           
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>
+      </l:BlockLayout>
+    </l:VerticalLayout>
+
+    <!-- =======================More Information=================================-->
+    <l:VerticalLayout id="containerLayout-5" width="100%">
+      <l:BlockLayout id="BlockLayout-5" class="customCard-2-Background">
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+          <VBox>
+            <Text width="100%" textAlign="Center" class="section--title" text="More Information"/>
+          </VBox>
+          
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>       
+         <l:BlockLayoutRow>
+          <l:BlockLayoutCell class="no-flex-display col-xl-4 col-xl-3 col-xl-2 col-xl-1 col-lg-4 col-lg-3 col-lg-2 col-lg-1 col-md-2 col-md-1 col-sm-2 col-xs-3 col-xs-2 col-xs-1 col-xs-0">
+          <f:GridContainer
+                id="gridList1"
+                items ="{path: '/moreInfo', templateShareable:false}" class="no-background-grid">
+              <f:GridListItem>
+              <f:layoutData>
+                <f:GridContainerItemLayoutData columns="3" />
+              </f:layoutData>
+              <VBox height="150px"
+                justifyContent="SpaceBetween">
+                  <VBox>
+                    <layoutData>
+                      <FlexItemData growFactor="1" shrinkFactor="0" /><!-- Don't shrink below minimum size. Fill space if available. -->
+                    </layoutData>                    
+                  <core:Icon
+                    backgroundColor="#fff"
+                    color="Default"
+                    size="3rem"
+                    src="{icon}" class="icon-style">
+                    <core:layoutData>
+                      <FlexItemData growFactor="1"/>
+                    </core:layoutData>
+                  </core:Icon>
+                    <Label class="iconText sapUiTinyMarginTop" text="{label}" textAlign="Center" />
+                    <Text
+                      text="{text}"
+                      textAlign="Center"
+                      class="sapUiBigMarginTop">
+                    </Text>
+                  </VBox>
+                </VBox>
+              </f:GridListItem>
+              </f:GridContainer>                   
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow>         
+      </l:BlockLayout>
+    </l:VerticalLayout>
+    <l:VerticalLayout width="100%">
+      <l:BlockLayout class="customCard-1-Background">
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow> 
+      </l:BlockLayout>
+    </l:VerticalLayout>
+    <!-- ======================= Footer =================================-->
+    <l:VerticalLayout id="footer" width="100%">
+      <l:BlockLayout id="footer-block" class="footer-container">
+        <l:BlockLayoutRow>
+          <l:BlockLayoutCell class="col-xl-4 col-xl-3 col-xl-2 col-xl-1 col-lg-4 col-lg-3 col-lg-2 col-lg-1 col-md-2 col-md-1 col-sm-2 col-xs-3 col-xs-2 col-xs-1 col-xs-0">
+            <f:GridContainer class="no-background-grid grid-wrap">
+              <f:GridListItem>
+              <f:layoutData>
+                <f:GridContainerItemLayoutData columns="2" />
+              </f:layoutData>
+                <Link text="LEGAL DISCLOSURE" target="_self" href="#" subtle="true" class="sapUiBigMarginTop footer-text"/>
+              </f:GridListItem>
+              <f:GridListItem>  
+              <f:layoutData>
+                <f:GridContainerItemLayoutData columns="2" />
+              </f:layoutData>
+                <Link text="PRIVACY" target="_self" href="#" subtle="true" class="sapUiBigMarginTop footer-text"/>
+              </f:GridListItem>
+              <f:GridListItem>
+              <f:layoutData>
+                <f:GridContainerItemLayoutData columns="2" />
+              </f:layoutData>
+                <Link text="TERMS OF USE" target="_self" href="#" subtle="true" class="sapUiBigMarginTop footer-text"/>
+              </f:GridListItem>
+              <f:GridListItem>
+              <f:layoutData>
+                <f:GridContainerItemLayoutData columns="2" />
+              </f:layoutData>
+                <Link text="COPYRIGHT" target="_self" href="#" subtle="true" class="sapUiBigMarginTop footer-text"/>
+              </f:GridListItem>
+              <f:GridListItem>
+              <f:layoutData>
+                <f:GridContainerItemLayoutData columns="2" />
+              </f:layoutData>
+                <Link text="TRADEMARK" target="_self" href="#" subtle="true" class="sapUiBigMarginTop footer-text"/>
+              </f:GridListItem>
+            </f:GridContainer>
+          </l:BlockLayoutCell>
+        </l:BlockLayoutRow> 
+      </l:BlockLayout>
+    </l:VerticalLayout>
+    </content> 
+  </Page>
+</mvc:View>

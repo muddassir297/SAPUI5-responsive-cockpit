@@ -1,0 +1,234 @@
+/*Media query*/
+/*Extra small devices (portrait phones, less than 576px) 
+@media (max-width: 639px) {
+  .col-xs{
+    margin-left: CALC(20% - -10px);
+  }
+}*/
+
+/*Extra small devices (portrait phones, less than 576px)*/ 
+@media (max-width: 639px) {
+  .col-xs-0{
+    margin-left: CALC(20% - -10px);
+  }
+}
+/* Small devices (landscape phones, 750px and up)*/
+@media (min-width: 640px) and (max-width: 749px) { 
+  .col-xs-1{
+    margin-left: CALC(20% - -10px);
+  }
+}
+
+/* Small devices (landscape phones, 750px and up)*/
+@media (min-width: 750px) and (max-width: 849px) { 
+  .col-xs-2{
+    margin-left: CALC(8% - -10px);
+  }
+}
+
+/* Medium devices (tablets, 800px and up)*/
+@media (min-width: 850px) and (max-width: 943.98px) {
+  .col-xs-3{
+    margin-left: CALC(16% - 10px);
+  } 
+
+ }
+ /* Medium devices (tablets, 800px and up)
+ @media (min-width: 950px) and (max-width: 1023.98px) {
+  .col-sm-1{
+    margin-left: CALC(4.5% - -10px);
+  } 
+
+ }
+*/
+/* Large devices (desktops, 1024px and up)*/
+@media (min-width: 1024px) and (max-width: 1099.98px) {
+  .col-sm-2{
+    width: 95%;
+    margin-left: CALC(4.5% - -10px);
+  } 
+}
+
+/* Large devices (desktops, 1024px and up)*/
+@media (min-width: 1100px) and (max-width: 1199.98px) {
+  .col-md-1{
+    width: 87%;
+    margin-left: CALC(8% - -10px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) and (max-width: 1279.98px){ 
+  .col-md-2{
+    width: 80%;
+    margin-left: CALC(10.5% - -15px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1280px and up)*/
+
+@media (min-width: 1280px) and (max-width: 1365.98px){ 
+  .col-lg-1{
+    width: 75%;
+    margin-left: CALC(13% - -10px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1366px and up)*/
+
+@media (min-width: 1366px) and (max-width: 1439.98px){ 
+  .col-lg-2{
+    width: 71%;
+    margin-left: CALC(15% - -15px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1400px and up)*/
+
+@media (min-width: 1440px) and (max-width: 1535.98px){ 
+  .col-lg-3{
+    width: 67%;
+    margin-left: CALC(17% - -10px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1536px and up)*/
+
+@media (min-width: 1536px) and (max-width: 1599.98px){ 
+  .col-lg-4{
+    width: 63%;
+    margin-left: CALC(19% - -10px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1600px and up)*/
+
+@media (min-width: 1600px) and (max-width: 1679.98px){ 
+  .col-xl-1{
+    width: 60%;
+    margin-left: CALC(20% - -30px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1680px and up)*/
+
+@media (min-width: 1680px) and (max-width: 1801.98px){ 
+  .col-xl-2{
+    width: 60%;
+    margin-left: CALC(21% - -30px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1602px and up)*/
+
+@media (min-width: 1802px) and (max-width: 1919.98px){ 
+  .col-xl-3{
+    width: 60%;
+    margin-left: CALC(22% - -30px);
+  } 
+}
+
+/* Extra large devices (large desktops, 1920px and up)*/
+
+@media (min-width: 1920px){ 
+  .col-xl-4{
+    width: 50%;
+    margin-left: CALC(25% - -15px);
+  } 
+}
+
+
+.customCellImageBackground {
+  color: #ffffff;
+  background-color: #2f3c48;
+  background-size: 100% auto;
+  background-position: 0 20%;
+}
+.customCard-1-Background {
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-position: 0 20%;
+}
+.sapTntToolHeader.sapMTB {      
+  background-color: #2f3c48 !important;
+  border-bottom: 0.0625rem solid #2f3c48 !important;
+}
+.customCellImageBackground h2, .customCellImageBackground span {
+  color: #ffffff;
+}
+.text-color-header bdi{
+  color: #ffffff;
+}
+.sapUiBlockCellContent{
+  text-align: center;
+  padding: 1rem 3rem !important;
+}
+.sapUiBlockCellContent h1 {
+  font-size: 2rem;
+}
+.button-padding{
+  padding: 0 1rem !important;
+}
+.text-align-left {
+  text-align: left;
+}
+.customCard-1-Background .sapMBtn, .customCard-2-Background .sapMBtn {
+  height: 1.95rem !important;
+}
+
+.customCard-2-Background {
+  background-color: rgba(200,217,231,0.15);
+}
+.no-flex-display{
+  -webkit-flex: none !important;
+    -ms-flex: none !important;
+    flex: none !important;
+}
+.icon-style{
+  padding: 25px;
+  border-radius: 100%;
+}
+.no-background-grid .sapMLIB{
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.iconText.sapMLabel {
+  display: inline-block;
+  font-size: 16px;
+  padding-top: 4px;
+  text-shadow: 1px 1px 0 white;
+  color: rgb(52, 97, 135);
+}
+.footer-container{
+  background-color: #2f3c48;
+  border-bottom: 0.0625rem solid #2f3c48;
+}
+.footer-text{
+  color: hsl(207, 20%, 78%) !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  line-height: 1.5rem !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  word-wrap: normal !important;
+}
+.footer-text:hover{
+  text-decoration: underline !important;
+  color: #ffffff !important;
+}
+.grid-wrap{
+  height:25px; 
+  grid-gap: 5px !important;
+}
+.section--title {
+  font-size: 1.625rem !important;
+}
+.section--title-primary {
+  font-size: 2rem !important;
+}

@@ -1,0 +1,36 @@
+<core:View height="100%" 
+  xmlns:core="sap.ui.core" 
+  xmlns="sap.m" 
+  xmlns:tnt="sap.tnt" 
+  xmlns:l="sap.ui.layout" 
+  xmlns:html="http://www.w3.org/1999/xhtml" 
+  xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" controllerName="UI5FioriForTools.controller.init" id="app">
+  <tnt:ToolPage id="rootApp">
+    <tnt:header>
+      <tnt:ToolHeader>
+        <Image width="48px" src="https://cockpit.hanatrial.ondemand.com/~1571908964000~/images/sap_logo.svg">
+        </Image>
+        <Label text="SAP Cloud Platform Cockpit" class="text-color-header" design="Bold" />
+        <ToolbarSpacer/>
+          <Button icon="sap-icon://travel-request" type="Transparent">
+            <layoutData>
+              <OverflowToolbarLayoutData priority="NeverOverflow" />
+            </layoutData>
+          </Button>        	
+          <Button text="Alan Smith" type="Transparent" press="onUserNamePress">
+            <layoutData>
+              <OverflowToolbarLayoutData priority="NeverOverflow" />
+            </layoutData>
+          </Button>
+          <Button icon="sap-icon://sys-help" type="Transparent">
+            <layoutData>
+              <OverflowToolbarLayoutData priority="NeverOverflow" />
+            </layoutData>
+          </Button>
+      </tnt:ToolHeader>
+    </tnt:header>
+    <tnt:mainContents>
+      <App id="MainContainer"/>
+    </tnt:mainContents>
+  </tnt:ToolPage>
+</core:View>
